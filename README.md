@@ -27,7 +27,7 @@ This is an example of the validator program for the included books.xml sample.
         !description(str)
     }
   }
- </pre>
+ </pre><br/>
  
  # How it works
  When you call to <i>ScvalCompile</i>, it compiles and generates the bytecode for the validator program.<br/>
