@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="scval.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="tinyxml2\tinyxml2.cpp">
+      <Filter>tinyxml2</Filter>
+    </ClCompile>
+    <ClCompile Include="scvalc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scvaltypes.h" />
+    <ClInclude Include="tinyxml2\tinyxml2.h">
+      <Filter>tinyxml2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="books.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="tinyxml2">
+      <UniqueIdentifier>{9e1c9923-32a5-40c3-9278-5d835a8bcc6a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
