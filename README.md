@@ -27,9 +27,9 @@ This is an example of the validator program for the included books.xml sample.
         !description(str)
     }
   }
- </pre><br/>
+ </pre>
  
- # How it works
+# How it works
  When you call to <i>ScvalCompile</i>, it compiles and generates the bytecode for the validator program.<br/>
  You can save/load this binary bytecode with  <i>ScvalLoadFromBinary/ScvalSaveToBinary</i>.<br/>
  Finally you can run the validator program by passing it to <i>ScvalValidate</i> which also receives a callback to return the actual XML data as attributes or nodes. That callback also will be in charge of validate specific strings, so more complex data validation can be performed in C++ for strings.<br/>
