@@ -28,6 +28,13 @@ This is an example of the validator program for the included books.xml sample.
     }
   }
  </pre>
+ It reads as:
+* There's an only root node "catalog"
+* With a variable number of sub nodes "book" (0..*)
+* Each <book> contains a mandatory attribute <b>id</b> type of string.
+  * and each book has mandatory nodes "author", "title", "genre"... each one of specified type with no attributes.
+
+Note that special types as @author, @date and @price are sent back to c++ callback for actual data verification.
  
 # How it works
  When you call to <i>ScvalCompile</i>, it compiles and generates the bytecode for the validator program.<br/>
