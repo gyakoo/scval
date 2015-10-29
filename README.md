@@ -1,11 +1,13 @@
 # scval
-C++ XML validator using a wildcards based custom language and a VM. Callback for actual XML parsing can be provided so this schema can be used in with any XML parsing lib.
+C++ XML validator using a wildcards based custom language and a virtual machine for interpreting. 
+
+A callback for actual XML parsing can be provided so this schema can be used in with any XML parsing lib.
 
 # WIP
-It's a Work in Progress, so you'd expect bugs, poor documentation and weird code convention.
+It's a Work in Progress, so you'd expect bugs, poor documentation and unconsistent coding style.
 
 # Build
-It's created for VS2010.
+Visual Studio 2010 solution is provided.
 
 # Sample
 See main.cpp, provides a sample how to initialize, compile and run the validator, against a xml sample parsed with tinyXML2.
@@ -28,7 +30,7 @@ This is an example of the validator program for the included books.xml sample.
     }
   }
  </pre>
- It reads as:
+ Which translates as:
 * There's an only root node "catalog"
 * With a variable number of sub nodes "book" (0..*)
 * Each <book> contains a mandatory attribute <b>id</b> type of string.
